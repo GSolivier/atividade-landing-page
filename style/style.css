@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'guilherme' ;
+    src: url(../assets_/Bebas-Neue/BebasNeue-Regular.ttf);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações genéricas */
+.container-grid{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+/* Cabeçalho */
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+header {
+    background-color: #F9003D;
+}
+
+nav {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+}
+
+/* Banner */
+
+.imagem-fundo-banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner article h1{
+    color: white;
+    font-size: 96px;
+    font-family: 'guilherme', cursive;
+    border-bottom: 1px solid #FFAF00;
+    padding-bottom: 15px;
+}
+
+.banner h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: #F9003D;
+    font-size: 53px;
+    margin-top: 20px;
+}
+
+.banner article {
+    max-width: 50%;
+    position: absolute;
+    left: 120px;
+    bottom: 20%;
+}
