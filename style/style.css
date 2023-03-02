@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: #080324;
+    /* background-color: #080324; */
 }
 
 /* Cabeçalho */
@@ -51,18 +51,27 @@ nav a {
     font-size: 18px;
 }
 
+header nav a:hover{
+    text-shadow: 2px 2px 7px black;
+    
+}
+
 /* Banner */
 
-.imagem-fundo-banner {
+.banner {
     position: relative;
-    width: 100%;
+    background-image: url(../images/imagem-fundo-banner.png);
+    height: 740px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .banner h1 {
     color: white;
     font-size: 96px;
     font-family: 'guilherme';
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #FFAF00;
 }
 
@@ -73,21 +82,19 @@ nav a {
     text-transform: uppercase;
     color: #F9003D;
     font-size: 53px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .banner .section-banner {
-    width: 50%;
-    max-width: 36%;
     position: absolute;
-    left: 180px;
-    bottom: 170px;
+    top: 170px;
+    width: max-content;
+    max-width: 36%;
 }
-
 .img-mouse {
     position: absolute;
-    bottom: 30px;
-    left: 200px;
+    top: 400px;
+    right: 500px;
 }
 
 /* Seção sobre */
@@ -111,7 +118,7 @@ nav a {
 
 .info-1 {
     position: relative;
-    bottom: 70px;
+    bottom: 60px;
     height: 617px;
     display: flex;
     flex-direction: column;
@@ -154,11 +161,12 @@ h3 {
 
 /* Seção info */
 
-.info{
-    position: relative;
-}
-
 .img-info {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/imagem-fundo-info.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 200px;
 }
@@ -180,9 +188,7 @@ h4 {
 .boxes {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 40px;
-    left: 180px
+    align-items: center;
 }
 
 .boxes article {
@@ -198,6 +204,8 @@ h4 {
 .img-endereco{
     width: 100%;
     height: 516px;
+    margin-top: -4px;
+    margin-bottom: -4px;
 }
 
 .endereco p {
