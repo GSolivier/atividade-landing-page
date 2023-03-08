@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Landing</title>
+
+    
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -14,24 +17,24 @@
 
 <body>
 
+    <header>
+
+        <div class="container-grid header-flex">
+
+            <nav id="barra-navegacao">
+
+                <a href="">Inicio</a>
+                <a href="">Sobre</a>
+                <a href="">Desafios</a>
+                <a href="">Endereço</a>
+
+            </nav>
+
+            <img id = "menu-mobile" src="assets_/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="" onclick = "mostrarMenu()">
+        </div>
+     
     <main>
 
-        <header>
-
-            <div class="container-grid header-flex">
-
-                <nav class="barra-navegacao">
-
-                    <a href="">Inicio</a>
-                    <a href="">Sobre</a>
-                    <a href="">Desafios</a>
-                    <a href="">Endereço</a>
-
-                </nav>
-
-            </div>
-
-        </header>
 
         <div class="banner">
 
@@ -48,7 +51,7 @@
 
                     </article>
 
-                    <img class="img-mouse" src="assets_/mouse.svg" alt="Mouse com uma seta para baixo">
+                    <img class="img-mouse" src="assets_/icons/mouse.svg" alt="Mouse com uma seta para baixo">
 
                 </div>
 
@@ -123,39 +126,48 @@
 
         </section>
 
-        <footer>
+        
+    </main>
 
-            <div class="endereco">
+    <footer>
 
-                <section class="container-grid footer-flex">
+        <div class="endereco">
 
-                    <div class="endereco-box">
+            <section class="container-grid footer-flex">
 
-                        <h2>Endereço:</h2>
+                <div class="endereco-box">
 
-                        <div class="p-endereco">
+                    <h2>Endereço:</h2>
 
-                            <p>Rua Niterói, 180<br>Centro, São Caetano do Sul - SP<br>CEP: 09510-200</p>
-                            <img class="img-mapa" src="images/mapa.png" alt="Mapa mostrando a localização da escola">
+                    <div class="p-endereco">
 
-                        </div>
+                        <p>Rua Niterói, 180<br>Centro, São Caetano do Sul - SP<br>CEP: 09510-200</p>
+                        <img class="img-mapa" src="images/mapa.png" alt="Mapa mostrando a localização da escola">
 
                     </div>
 
-                </section>
-
-            </div>
-
-            <section class="autorais">
-
-                <p>Copyright © 2023 - Escola Senai de Informática</p>
+                </div>
 
             </section>
 
-        </footer>
+        </div>
 
-    </main>
+        <section class="autorais">
 
+            <p>Copyright © 2023 - Escola Senai de Informática</p>
+
+        </section>
+
+    </footer>
+
+    <script>
+
+        function mostrarMenu() {
+            document.getElementById("barra-navegacao").classList.toggle("mostrarMenu");
+        }
+
+    </script>
+    
 </body>
 
 </html>

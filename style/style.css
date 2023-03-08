@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'guilherme';
-    src: url(../assets_/Bebas-Neue/BebasNeue-Regular.ttf);
+    src: url(../assets_/fonts/Bebas-Neue/BebasNeue-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(../assets_/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../assets_/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 /* RESET */
@@ -17,8 +17,9 @@
 
 /* Configurações genéricas */
 .container-grid {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 body{
@@ -26,6 +27,11 @@ body{
 }
 
 /* Cabeçalho */
+
+#menu-mobile{
+    display: none;
+}
+
 header .header-flex {
     display: flex;
     justify-content: flex-end;
@@ -65,7 +71,6 @@ header nav a:hover{
     height: 740px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .banner h1 {
@@ -248,4 +253,75 @@ h4 {
     color: #FFFFFF;
     width: 100%;
     height: 82px;
+}
+
+/* MEDIA QUERIES */
+
+/* smartphones 767px - 0px */
+@media screen and (max-width: 767px) {
+
+
+    .mostrarMenu {
+        left: 0;
+        opacity: 1;
+    }
+
+    /* main, footer {
+    display: none;
+   }  */
+
+
+   /* cabecalho */
+
+    #menu-mobile{
+        display: block;
+    }
+
+    header nav {
+        position: fixed;
+        top: 60px;
+        left: -80vw;
+        width: 80vw;
+        height: 92vh;
+        background-color: #F9003D;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 10;
+        transition: left 0.4s, opacity 0.5s;
+        opacity: 0;
+    }
+    
+    /* banner */
+
+   .section-banner h1 {
+        font-size: 40px;
+        border: none;
+    }
+
+    .section-banner article {
+        /* border: 1px solid yellow; */
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .img-mouse {
+        display: none;
+    }
+
+    /* sobre */
+
+    .img-sobre{
+        width: 365px;
+        height: 347px;
+        margin-left: 5px;
+    }
+
+    .info-2 h2{
+        font-size: 30px;
+    }
+
+    .info-2 p {
+        font-size: 14px;
+    }
 }
